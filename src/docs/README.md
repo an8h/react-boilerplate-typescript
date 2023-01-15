@@ -20,6 +20,7 @@
     `npm install eslint-config-airbnb-typescript --save-dev`
 
 4. Update eslint.json
+```
     {
         "env": {
             "browser": true,
@@ -48,8 +49,10 @@
         ],
         "rules": {}
     }
+```
 
 5. Update package.json scripts 
+```
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
@@ -58,14 +61,17 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix ."
     },
+```
 
 6. Update eslint.json rules
+```
     "rules": {
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-uses-react": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
         "react/no-unescaped-entities": ["off"]
     }
+```
 
 7. Install prettier dependencies
     `prettier eslint-config-prettier eslint-plugin-prettier --save-dev`
@@ -73,6 +79,7 @@
 8. Create `.prettierrc` file at the root folder
 
 9. Add rules to `.prettierrc` 
+```
     {
     "tabWidth": 2,
     "semi": true,
@@ -82,8 +89,10 @@
     "useTabs": false,
     "endOfLine":"auto"
   }
+```
 
 10. Update the `eslintrc.json` as well so that it uses prettier now 
+```
     {
         "env": {
             "browser": true,
@@ -120,10 +129,12 @@
             "react/no-unescaped-entities": ["off"]
         }
     }
+```
 
 11. Install Prettier extension for VSCode
 
 12. Add rules in VSCode `settings.json`
+```
     {
         "editor.accessibilitySupport": "off",
         "git.autofetch": true,
@@ -141,6 +152,7 @@
             "editor.formatOnSave": false
         }
     }
+```
 
 13. Remove  `standard eslint typescript package` from  `package.json`, remove `node_modules`, and run  `npm install`
 
